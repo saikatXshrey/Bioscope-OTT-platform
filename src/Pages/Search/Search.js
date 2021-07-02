@@ -82,7 +82,6 @@ const Search = () => {
             className="searchBox"
             label="Search"
             variant="filled"
-            // value={transcript ? transcript : ""}
             onChange={(e) => setSearchText(e.target.value)}
           />
           <Button

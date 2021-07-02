@@ -129,7 +129,7 @@ export default function TransitionsModal({ children, media_type, id }) {
                     <Button
                       size="large"
                       color="secondary"
-                    // variant="contained"
+                      onClick={(e) => setFav(!fav)}
                     >
                       {fav ? <FavoriteIcon /> : <FavoriteBorderIcon />}
                     </Button>
