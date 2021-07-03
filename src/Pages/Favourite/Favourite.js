@@ -1,31 +1,31 @@
 import axios from "axios";
-import "./Trending.css";
+import "./Favourite.css";
 import { useEffect, useState } from "react";
 import SingleContent from "../../components/SingleContent/SingleContent";
 import CustomPagination from "../../components/Pagination/CustomPagination";
 
-const Trending = () => {
+const Favourite = () => {
 	const [page, setPage] = useState(1);
 	const [content, setContent] = useState([]);
 
-	const fetchTrending = async () => {
-		const { data } = await axios.get(
-			`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`
-		);
+	// const fetchTrending = async () => {
+	// 	const { data } = await axios.get(
+	// 		`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`
+	// 	);
 
-		setContent(data.results);
-	};
+	// 	setContent(data.results);
+	// };
 
-	useEffect(() => {
-		window.scroll(0, 0);
-		fetchTrending();
-		// eslint-disable-next-line
-	}, [page]);
+	// useEffect(() => {
+	// 	window.scroll(0, 0);
+	// 	fetchTrending();
+	// 	// eslint-disable-next-line
+	// }, [page]);
 
 	return (
 		<div>
-			<span className="pageTitle">Trending Today</span>
-			<div className="trending">
+			<span className="pageTitle"> Your Favourites</span>
+			<div className="favourite">
 				{content &&
 					content.map((c) => (
 						<SingleContent
@@ -44,4 +44,4 @@ const Trending = () => {
 	);
 };
 
-export default Trending;
+export default Favourite;
