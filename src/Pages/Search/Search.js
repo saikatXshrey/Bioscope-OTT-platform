@@ -88,14 +88,14 @@ const Search = () => {
 						onChange={(e) => setSearchText(e.target.value)}
 					/>
 					<Button onClick={SpeechRecognition.startListening}>
-						<MicIcon fontSize="large" />
+						<MicIcon fontSize="large" color="error" />
 					</Button>
 					<Button
 						onClick={fetchSearch}
 						variant="contained"
-						style={{ marginLeft: 10 }}
+						style={{ marginLeft: 10, backgroundColor: "#353935" }}
 					>
-						<SearchIcon fontSize="large" />
+						<SearchIcon fontSize="large" color="secondary" />
 					</Button>
 				</div>
 

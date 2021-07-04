@@ -8,7 +8,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 import { useHistory } from "react-router-dom";
 import StarsIcon from "@material-ui/icons/Stars";
-import InfoIcon from '@material-ui/icons/Info';
+import InfoIcon from "@material-ui/icons/Info";
 
 const useStyles = makeStyles({
 	root: {
@@ -34,9 +34,11 @@ export default function SimpleBottomNavigation() {
 			history.push("/series");
 		} else if (value === 3) {
 			history.push("/search");
-		} else if (value === 4) {
-			history.push("/favourite");
-		} else if (value === 5) {
+		}
+		// else if (value === 4) {
+		// 	history.push("/favourite");
+		// }
+		else if (value === 4) {
 			history.push("/about");
 		}
 	}, [value, history]);
@@ -71,11 +73,11 @@ export default function SimpleBottomNavigation() {
 				icon={<SearchIcon />}
 			/>
 			{/* check it  */}
-			<BottomNavigationAction
+			{/* <BottomNavigationAction
 				style={{ color: "#FF0000" }}
 				label="Fav"
 				icon={<StarsIcon />}
-			/>
+			/> */}
 			{/* check it  */}
 			<BottomNavigationAction
 				style={{ color: "#FF0000" }}
