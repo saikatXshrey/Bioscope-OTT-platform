@@ -15,6 +15,7 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import Carousel from "../Carousel/Carousel";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
 	modal: {
@@ -40,6 +41,9 @@ export default function TransitionsModal({ children, media_type, id }) {
 	const [content, setContent] = useState();
 	const [video, setVideo] = useState();
 	const [fav, setFav] = useState(false);
+
+	// useHistory
+	const history = useHistory();
 
 	const handleOpen = () => {
 		setOpen(true);
@@ -152,6 +156,19 @@ export default function TransitionsModal({ children, media_type, id }) {
 										href={`https://www.youtube.com/watch?v=${video}`}
 									>
 										Watch the Trailer
+									</Button>
+									<Button
+										variant="contained"
+										color="primary"
+										onClick={(e) => history.push({
+											pathname: "/recommended",
+											state: {
+												id: id,
+												media_type: media_type
+											}
+										})}
+									>
+										Recommended
 									</Button>
 								</div>
 							</div>

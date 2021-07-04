@@ -2,9 +2,11 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import SimpleBottomNavigation from "./components/MainNav";
+import About from "./Pages/About/About";
 import Movies from "./Pages/Movies/Movies";
 import Series from "./Pages/Series/Series";
 import Trending from "./Pages/Trending/Trending";
+import Recommended from "./Pages/Recommended/Recommended";
 import Search from "./Pages/Search/Search";
 import { Container } from "@material-ui/core";
 // import { Container } from "react-bootstrap";
@@ -32,17 +34,18 @@ function App() {
 					<Container>
 						<Switch>
 							{/* <Route path="/" exact component={Welcome} /> */}
-							{}
+							{ }
 							<PrivateRoute path="/" component={Trending} exact />
 
 							<PrivateRoute path="/movies" component={Movies} />
 							<PrivateRoute path="/series" component={Series} />
 							<PrivateRoute path="/search" component={Search} />
-
+							<PrivateRoute path="/recommended" component={Recommended} />
 							<PrivateRoute path="/update-profile" component={UpdateProfile} />
+
+							<Route exact path="/about" component={About} />
 							<Route exact path="/login" component={Login} />
 							<Route exact path="/signup" component={Signup} />
-
 							<Route exact path="/forgot-password" component={ForgotPassword} />
 						</Switch>
 					</Container>
