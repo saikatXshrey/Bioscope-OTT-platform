@@ -39,15 +39,14 @@ const Recommended = () => {
 		const { data } = await axios.get(
 			`https://api.themoviedb.org/3/${media_type}/${id}/recommendations?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`
 		);
-		setRecommend(data.results);
+		setRecommend(data);
 	};
 
 	useEffect(() => {
 		window.scroll(0, 0);
 		fetchRecommended();
-		console.log(id, media_type, recommend.length);
-		// eslint-disable-next-line
-	}, []);
+
+	}, [recommend]);
 
 	return (
 		<div>

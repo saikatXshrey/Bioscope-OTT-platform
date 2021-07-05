@@ -28,9 +28,7 @@ function Copyright() {
 	return (
 		<Typography variant="body2" color="secondary" align="center">
 			{"Copyright © "}
-			<Link color="red" href="https://material-ui.com/">
-				🍿BIOSCOPE
-			</Link>{" "}
+			🍿BIOSCOPE {"      "}
 			{new Date().getFullYear()}
 			{"."}
 		</Typography>
@@ -90,7 +88,7 @@ const cards = [
 		name: "Joyesh Debnath",
 		img: Joyesh,
 		description:
-			"Hi There 👋 .Myself Joyesh and I am passionate about coding . I love to work on projects and interested in learning more and more. in short I am alaways passionate about learning..",
+			"Hi There 👋 .Myself Joyesh and I am passionate about coding . I love to work on projects and interested in MERN. in short I am alaways passionate about learning..",
 		links: {
 			github: "https://github.com/JoyeshDebnath",
 			linkedin: "https://www.linkedin.com/in/joyesh-debnath-549b3b208/",
@@ -145,10 +143,10 @@ export default function Album() {
 						</Typography>
 						{/* Header text */}
 						<Typography variant="h5" align="center" color="white" paragraph>
-							Hi There👋👋.This is Team Bioscope. 🍿. We have built a OTT
-							platform with react and Added Firebase Auth to authenticate users
+							Hi There👋👋.This is Team Bioscope. 🍿. We have built a OTT based
+							platform with React and Added Firebase Auth to authenticate users
 							. You can search for movies , Find out recommendations,also see
-							cast and reviews and trailers of all movies and web series ..Dont
+							cast and reviews and trailers of all movies and web series, also search through voice commands and Make a favourite list of yours😀..Dont
 							Forget to give it a try.😁😁
 						</Typography>
 						{/* Header text */}
@@ -253,7 +251,7 @@ export default function Album() {
 					</Button>
 					<Button
 						target="__blank"
-						href="https://github.com/saikatXshrey/Bioscope-OTT-platform"
+						href="https://drive.google.com/drive/folders/1q3N0rR6orl4YfuggRlCiO6YZiyRasRdZ?usp=sharing"
 					>
 						<DescriptionIcon
 							fontSize="large"
@@ -263,7 +261,7 @@ export default function Album() {
 					</Button>
 					<Button
 						target="__blank"
-						href="https://github.com/saikatXshrey/Bioscope-OTT-platform"
+						href="https://drive.google.com/drive/folders/1sRF24fFwfgG9jNWqH4AJdkU5xsoHRxCF?usp=sharing"
 					>
 						<PictureAsPdfIcon
 							fontSize="large"

@@ -16,6 +16,8 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import Carousel from "../Carousel/Carousel";
 import { useHistory } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
+import { db } from "../../firebase";
 
 const useStyles = makeStyles((theme) => ({
 	modal: {
@@ -26,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 	paper: {
 		width: "90%",
 		height: "80%",
-		backgroundColor: "#39445a",
+		backgroundColor: "#000000",
 		border: "1px solid #282c34",
 		borderRadius: 10,
 		color: "white",
@@ -36,12 +38,15 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function TransitionsModal({ children, media_type, id }) {
+	const { currentUser, logout } = useAuth();
 	const classes = useStyles();
 	const [open, setOpen] = useState(false);
 	const [content, setContent] = useState();
 	const [video, setVideo] = useState();
-	const [fav, setFav] = useState(false);
-
+	//related to datbase
+	// const [fav, setFav] = useState({});
+	const [favouriteList, setFavouriteList] = useState([]); //my favourite list ....
+	// related to databse
 	// useHistory
 	const history = useHistory();
 
@@ -62,6 +67,34 @@ export default function TransitionsModal({ children, media_type, id }) {
 		// console.log(data);
 	};
 
+	function removeFromFavourite(id) {
+		const docRef = db.collection("favourites").doc(currentUser.uid);
+		docRef.get().then((docSnap) => {
+			const result = docSnap.data().favourites.filter((fav) => {
+				return fav.content.id !== id;
+			});
+			docRef.update({
+				favourites: result,
+			});
+		});
+	}
+
+	// adding to fav
+	function addToFavourite(content, media_type) {
+		//setting the setFav
+		// setFav({
+		// 	id: id,
+		// 	media_type: media_type,
+		// });
+		const fav = { media_type: media_type, content: content };
+		db.collection("favourites")
+			.doc(currentUser.uid)
+			.set({
+				favourites: [...favouriteList, fav],
+			});
+	}
+	//end of  adding to databasee (fav)
+
 	const fetchVideo = async () => {
 		const { data } = await axios.get(
 			`https://api.themoviedb.org/3/${media_type}/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
@@ -69,13 +102,40 @@ export default function TransitionsModal({ children, media_type, id }) {
 
 		setVideo(data.results[0]?.key);
 	};
+	// handling database
+
+	// check if contains in database
+	const stored = favouriteList.find((o) => o.content.id === id);
+	console.log(stored);
 
 	useEffect(() => {
 		fetchData();
+		// databse
+		// if (currentUser) {
+		if (currentUser) {
+			const docRef = db.collection("favourites").doc(currentUser.uid);
+
+			var unsubscribe = docRef.onSnapshot((docSnap) => {
+				if (docSnap.exists) {
+					// console.log(docSnap.data().favourites);
+					setFavouriteList(docSnap.data().favourites);
+				} else {
+					console.log("NO docs ");
+				}
+			});
+		} else {
+			history.push("/login");
+		}
+
+		// databse
 		fetchVideo();
+		return () => {
+			unsubscribe();
+		};
 		// eslint-disable-next-line
 	}, []);
 
+	// handling database
 	return (
 		<>
 			<div
@@ -129,13 +189,31 @@ export default function TransitionsModal({ children, media_type, id }) {
 											"-----"
 										).substring(0, 4)}
 										){/* have to handle this using context api  */}
-										<Button
-											size="large"
-											color="secondary"
-											onClick={(e) => setFav(!fav)}
-										>
-											{!fav ? "ADD TO FAV" : "REMOVE FROM FAV"}
-										</Button>
+										{stored ? (
+											<Button
+												size="large"
+												color="secondary"
+												// onClick={(e) => setFav(!fav)}
+												// onClick={(e) => addToFavourite(id, media_type)}
+												// onClick={(e) => addToFavourite(content, media_type)}
+												onClick={(e) => removeFromFavourite(id)}
+											>
+												REMOVE
+												<FavoriteIcon />
+											</Button>
+										) : (
+											<Button
+												size="large"
+												color="secondary"
+												// onClick={(e) => setFav(!fav)}
+												// onClick={(e) => addToFavourite(id, media_type)}
+												onClick={(e) => addToFavourite(content, media_type)}
+											>
+												ADD
+												<FavoriteBorderIcon />
+											</Button>
+										)}
+										{/* handledd by database  */}
 									</span>
 									{content.tagline && (
 										<i className="tagline">{content.tagline}</i>
@@ -157,16 +235,36 @@ export default function TransitionsModal({ children, media_type, id }) {
 									>
 										Watch the Trailer
 									</Button>
+									{/* fav button  */}
+
+									<Button
+										variant="contained"
+										color="error"
+										onClick={(e) =>
+											history.push({
+												pathname: "/favourite",
+												// state: {
+												// 	favourite: favouriteList,
+												// },
+											})
+										}
+									>
+										Your fav
+									</Button>
+
+									{/*  */}
 									<Button
 										variant="contained"
 										color="primary"
-										onClick={(e) => history.push({
-											pathname: "/recommended",
-											state: {
-												id: id,
-												media_type: media_type
-											}
-										})}
+										onClick={(e) =>
+											history.push({
+												pathname: "/recommended",
+												state: {
+													id: id,
+													media_type: media_type,
+												},
+											})
+										}
 									>
 										Recommended
 									</Button>

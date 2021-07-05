@@ -6,6 +6,7 @@ import About from "./Pages/About/About";
 import Movies from "./Pages/Movies/Movies";
 import Series from "./Pages/Series/Series";
 import Trending from "./Pages/Trending/Trending";
+import Favourite from "./Pages/Favourite/Favourite";
 import Recommended from "./Pages/Recommended/Recommended";
 import Search from "./Pages/Search/Search";
 import { Container } from "@material-ui/core";
@@ -34,13 +35,14 @@ function App() {
 					<Container>
 						<Switch>
 							{/* <Route path="/" exact component={Welcome} /> */}
-							{ }
+							{}
 							<PrivateRoute path="/" component={Trending} exact />
 
 							<PrivateRoute path="/movies" component={Movies} />
 							<PrivateRoute path="/series" component={Series} />
 							<PrivateRoute path="/search" component={Search} />
 							<PrivateRoute path="/recommended" component={Recommended} />
+							<PrivateRoute path="/favourite" component={Favourite} />
 							<PrivateRoute path="/update-profile" component={UpdateProfile} />
 
 							<Route exact path="/about" component={About} />
