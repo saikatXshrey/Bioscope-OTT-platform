@@ -10,3 +10,5 @@ Plus it will recommend you about the movie/series based on your search and you c
 
 Moreover it is a PWA which is an awesome technology through which you can install the app in any device such as android/ios/PC so it is platform independent and also you can obviously access the web app through the given link😀✌
 
+
+It is very benefecial for movie addictive people who can't keep track of the movies they saw/willing to see and can ultimately buy/rent out the movie/series from platforms.
