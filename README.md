@@ -15,6 +15,9 @@ It is very benefecial for movie addictive people who can't keep track of the mov
 
 BIOSCOPE has user-aunthentication and user-uid based db's records and and keeping the security in mind we added "email-push" notification when a user wants to change password and it has "email & password validation" for protected surfing🐱‍👤.
 
+## Live Link🚀🚀
+[🍿BIOSCOPE](https://bioscope-app.netlify.app/)
+
 ## Demo
 
 Demo Videos
