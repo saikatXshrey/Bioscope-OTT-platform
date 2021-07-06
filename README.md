@@ -30,7 +30,62 @@ Demo Videos
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Web App Demo
+
+![Screenshot (26)](https://user-images.githubusercontent.com/76695320/124617446-8f8f6e80-de94-11eb-9285-363b8335d854.png)
+
+![Screenshot (12)](https://user-images.githubusercontent.com/76695320/124617675-c1083a00-de94-11eb-9db6-c22c4a516e63.png)
+
+![Screenshot (13)](https://user-images.githubusercontent.com/76695320/124617754-d0878300-de94-11eb-8b8c-46ffd60cfa76.png)
+
+![Screenshot (14)](https://user-images.githubusercontent.com/76695320/124617778-d54c3700-de94-11eb-8a4d-3ea4aa919193.png)
+
+![Screenshot (18)](https://user-images.githubusercontent.com/76695320/124617805-dc734500-de94-11eb-8e70-9bb356935c95.png)
+
+![Screenshot (20)](https://user-images.githubusercontent.com/76695320/124617832-e2692600-de94-11eb-8bd6-6434f2ba320b.png)
+
+![Screenshot (21)](https://user-images.githubusercontent.com/76695320/124617863-e85f0700-de94-11eb-9287-2ce26c13ac9a.png)
+
+![Screenshot (22)](https://user-images.githubusercontent.com/76695320/124617885-edbc5180-de94-11eb-9275-1c80a0b11e74.png)
+
+![Screenshot (26)](https://user-images.githubusercontent.com/76695320/124617924-f6148c80-de94-11eb-8d51-8d6efe19f29d.png)
+
+![Screenshot (19)](https://user-images.githubusercontent.com/76695320/124617962-ff055e00-de94-11eb-9ef1-b14fe5989363.png)
+
+### Mobile PWA App
+
+![mb-1](https://user-images.githubusercontent.com/76695320/124618454-6d4a2080-de95-11eb-8bd7-62d203df5df0.jpeg)
+
+![mb2](https://user-images.githubusercontent.com/76695320/124618478-73d89800-de95-11eb-8c49-dcc633a03815.jpeg)
+
+![mb3](https://user-images.githubusercontent.com/76695320/124618654-98347480-de95-11eb-88a4-8b1594ffc35a.jpeg)
+
+![mb4](https://user-images.githubusercontent.com/76695320/124618665-9c609200-de95-11eb-9518-753fcb6ffe1f.jpeg)
+
+![mb5](https://user-images.githubusercontent.com/76695320/124618706-a4203680-de95-11eb-8a02-b5ef03368e1c.jpeg)
+
+![mb6](https://user-images.githubusercontent.com/76695320/124618736-aaaeae00-de95-11eb-9406-2e092f50918e.jpeg)
+
+![mb12](https://user-images.githubusercontent.com/76695320/124618793-b8643380-de95-11eb-9f85-4d6d9583fbbf.jpeg)
+
+![mb10](https://user-images.githubusercontent.com/76695320/124618767-b0a48f00-de95-11eb-9a08-c05923e339c1.jpeg)
+
+![mb8](https://user-images.githubusercontent.com/76695320/124618925-d762c580-de95-11eb-8ae3-f8ba0141b349.jpeg)
+
+![mb11](https://user-images.githubusercontent.com/76695320/124618982-e34e8780-de95-11eb-9f66-9f91d9c77b70.jpeg)
+
+![mb13](https://user-images.githubusercontent.com/76695320/124619033-ec3f5900-de95-11eb-8dfc-0c04005b330b.jpeg)
+
+![mb14](https://user-images.githubusercontent.com/76695320/124619057-f06b7680-de95-11eb-9942-548e4536c7ee.jpeg)
+
+
+### Firestore DB
+
+![Screenshot (24)](https://user-images.githubusercontent.com/76695320/124618297-4db2f800-de95-11eb-958a-460b688527fb.png)
+
+![Screenshot (25)](https://user-images.githubusercontent.com/76695320/124618329-53104280-de95-11eb-977f-983d3e5eaf4a.png)
+
+![Screenshot (23)](https://user-images.githubusercontent.com/76695320/124618356-573c6000-de95-11eb-8383-2fe34a16dcf6.png)
 
   
 ## API Reference
