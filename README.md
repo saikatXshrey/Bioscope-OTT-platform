@@ -17,9 +17,14 @@ BIOSCOPE has user-aunthentication and user-uid based db's records and and keepin
 
 ## Demo
 
-Insert gif or link to demo
+Demo Videos
 
-  
+[A short demo of our Web App🐱‍👤](https://drive.google.com/file/d/1_mzEsbJWDP0I6GnElHfcJsGJLavLFOrR/view?usp=sharing)
+
+["forget password🧠" feature Demo](https://drive.google.com/file/d/1gXFfTVYoWtK35KqfghrrNX3aPcOihuYl/view?usp=sharing)
+
+[PWA PC view Demo🔥](https://drive.google.com/file/d/1rNen6KOv6OqIdJQ2ByyYKUWpKRexQll6/view?usp=sharing)
+
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
