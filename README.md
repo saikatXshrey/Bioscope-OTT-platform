@@ -18,6 +18,12 @@ BIOSCOPE has user-aunthentication and user-uid based db's records and and keepin
 ## Live Link🚀🚀
 [🍿BIOSCOPE](https://bioscope-app.netlify.app/)
 
+## Documentation
+
+[Documentation](https://drive.google.com/file/d/1byqDXGyIq6SETrZT3zcdA8BQWb9lOy_P/view?usp=sharing)
+
+[Presentation](https://drive.google.com/file/d/1SfSMJLRLNDMSGT93_BYLE4nfpcqrHQKq/view?usp=sharing)
+
 ## Demo
 
 Demo Videos
