@@ -14,3 +14,46 @@ Moreover it is a PWA which is an awesome technology through which you can instal
 It is very benefecial for movie addictive people who can't keep track of the movies they saw/willing to see and can ultimately buy/rent out the movie/series from platforms.
 
 BIOSCOPE has user-aunthentication and user-uid based db's records and and keeping the security in mind we added "email-push" notification when a user wants to change password and it has "email & password validation" for protected surfing🐱‍👤.
+
+## Demo
+
+Insert gif or link to demo
+
+  
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+  
+## API Reference
+
+Api used : [The Movie Database(tmdb)🎬](https://developers.themoviedb.org/3/getting-started/introduction)
+
+#### Get trending movie/series
+
+```http
+  GET /api/trending/all/day?api_key=?{...}&page={...}
+
+  https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}&page=${page}
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+| `pages` | `string` | **Required**. Number of Pages |
+
+#### Get all tv-series
+
+```http
+  GET /api/discover/tv?api_key=?{...}&page={...}&with_genres=${...}
+
+  https://api.themoviedb.org/3/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreforURL}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `api_key`      | `string` | **Required**. Your API key |
+| `page`      | `string` | **Required**. Number of Pages |
+| `genres`      | `string` | **Required**. Sort by Genre |
+
+  
