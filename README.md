@@ -102,3 +102,12 @@ Api used : [The Movie Database(tmdb)🎬](https://developers.themoviedb.org/3/ge
 | `api_key`      | `string` | **Required**. Your API key |
 | `id`      | `string` | **Required**. Current movie/tv-series id |
 | `media_type`      | `string` | **Required**. Movie/Tv-Series |
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY` : get your own api_key from [The Movie Database(tmdb)🎬](https://www.themoviedb.org/)
+
+`ANOTHER_API_KEY` : connect your [Firebase](https://firebase.google.com/) account & configure it in "firebase.js"
