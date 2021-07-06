@@ -155,3 +155,34 @@ To run this project, you will need to add the following environment variables to
   npm i react-speech-recognition
 ```
 
+
+## Run Locally
+
+Clone the BIOSCOPE project
+
+```bash
+  git clone https://github.com/saikatXshrey/Bioscope-OTT-platform
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+or
+```bash
+  yarn start
+```
+
