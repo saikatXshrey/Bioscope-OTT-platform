@@ -100,5 +100,5 @@ Api used : [The Movie Database(tmdb)🎬](https://developers.themoviedb.org/3/ge
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `api_key`      | `string` | **Required**. Your API key |
-| `page`      | `string` | **Required**. Number of Pages |
-| `query`      | `string` | **Required**. Your Search Text |
+| `id`      | `string` | **Required**. Current movie/tv-series id |
+| `media_type`      | `string` | **Required**. Movie/Tv-Series |
