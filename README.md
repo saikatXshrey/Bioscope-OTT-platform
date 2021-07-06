@@ -1,5 +1,5 @@
 
-# BIOSCOPE
+# 🍿BIOSCOPE
 
 The Project “BIOSCOPE” is a web app(pwa) that lets us to know the information related to the movies. This app will be helpful to find the release date of movies, people can search for movies even by voice. Find out recommendations,also see cast and reviews and trailers of all movies and web series and review any movie and tv shows easily.
 Also app helps you keep track of your "Favourite list" which the "firestore-db" keeps safe and sound according to users-login.
@@ -12,3 +12,5 @@ Moreover it is a PWA which is an awesome technology through which you can instal
 
 
 It is very benefecial for movie addictive people who can't keep track of the movies they saw/willing to see and can ultimately buy/rent out the movie/series from platforms.
+
+BIOSCOPE has user-aunthentication and user-uid based db's records and and keeping the security in mind we added "email-push" notification when a user wants to change password and it has "email & password validation" for protected surfing🐱‍👤.
