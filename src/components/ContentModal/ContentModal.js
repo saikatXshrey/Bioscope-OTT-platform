@@ -238,6 +238,7 @@ export default function TransitionsModal({ children, media_type, id }) {
 									{/* fav button  */}
 
 									<Button
+										style={{ marginTop: "3px", marginBottom: "3px" }}
 										variant="contained"
 										color="error"
 										onClick={(e) =>
@@ -253,6 +254,7 @@ export default function TransitionsModal({ children, media_type, id }) {
 									</Button>
 
 									{/*  */}
+
 									<Button
 										variant="contained"
 										color="primary"

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
-import { Badge, Paper } from "@material-ui/core";
+import { Badge } from "@material-ui/core";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import TvIcon from "@material-ui/icons/Tv";
 import MovieIcon from "@material-ui/icons/Movie";
@@ -21,6 +21,12 @@ const useStyles = makeStyles({
 		bottom: 0,
 		backgroundColor: "#000000",
 		zIndex: 100,
+		"& .MuiBottomNavigationAction-root": {
+			"@media (max-width: 768px)": {
+				minWidth: "auto",
+				padding: "6px 0",
+			},
+		},
 	},
 });
 
@@ -49,7 +55,7 @@ export default function SimpleBottomNavigation() {
 		}
 		// routing
 
-		// setting count reading from database
+		//setting count reading from database
 		if (currentUser) {
 			db.collection("favourites")
 				.doc(currentUser.uid)
@@ -64,10 +70,11 @@ export default function SimpleBottomNavigation() {
 						}
 					}
 				});
-		} else {
-			history.push("/login");
 		}
-		// stting count reading from database
+		// else {
+		// 	history.push("/about");
+		// }
+		//stting count reading from database
 	}, [value, history]);
 
 	return (
@@ -113,10 +120,13 @@ export default function SimpleBottomNavigation() {
 
 			{/* check it  */}
 			<BottomNavigationAction
-				style={{ color: "#FF0000" }}
+				style={{ marginLeft: "2px", marginRight: "2px", color: "#FF0000" }}
 				label="About"
+				mx="auto"
 				icon={<InfoIcon />}
 			/>
 		</BottomNavigation>
 	);
 }
+
+//this is me

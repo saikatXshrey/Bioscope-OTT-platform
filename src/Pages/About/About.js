@@ -88,7 +88,7 @@ const cards = [
 		name: "Joyesh Debnath",
 		img: Joyesh,
 		description:
-			"Hi There 👋 .Myself Joyesh and I am passionate about coding . I love to work on projects and interested in MERN. in short I am alaways passionate about learning..",
+			"Hi There 👋 .Myself Joyesh and I am passionate about coding . I love to work on projects and interested in MERN and problem solving. In short I am alaways passionate about learning & coding..",
 		links: {
 			github: "https://github.com/JoyeshDebnath",
 			linkedin: "https://www.linkedin.com/in/joyesh-debnath-549b3b208/",
@@ -144,9 +144,9 @@ export default function Album() {
 						{/* Header text */}
 						<Typography variant="h5" align="center" color="white" paragraph>
 							Hi There👋👋.This is Team Bioscope. 🍿. We have built a OTT based
-							platform with React and Added Firebase Auth to authenticate users
-							. You can search for movies , Find out recommendations,also see
-							cast and reviews and trailers of all movies and web series, also search through voice commands and Make a favourite list of yours😀..Dont
+							platform with react and Added Firebase Auth to authenticate users
+							. You can search for movies (even by Voice), Find out recommendations,also see
+							cast and reviews and trailers of all movies and web series and add movies to your favourites. Also this is a PWA converted which can be doenloaded as an app on your Mobile Phone and as a an application on your PC...Dont
 							Forget to give it a try.😁😁
 						</Typography>
 						{/* Header text */}

@@ -34,19 +34,25 @@ const Recommended = () => {
 	const location = useLocation();
 
 	const { id, media_type } = location.state;
+	console.log("ID,Media", id, media_type);
 
-	const fetchRecommended = async () => {
+	const fetchRecommended = async (id, media_type) => {
 		const { data } = await axios.get(
 			`https://api.themoviedb.org/3/${media_type}/${id}/recommendations?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`
+
+			// `https://api.themoviedb.org/3/${media_type}/${id}/recommendations?api_key=827e7705e7d25b9a15c7036fefeace27&language=en-US&page=1`
 		);
-		setRecommend(data);
+
+		setRecommend(data.results);
 	};
 
 	useEffect(() => {
 		window.scroll(0, 0);
-		fetchRecommended();
+		fetchRecommended(id, media_type);
+		console.log(recommend);
 
-	}, [recommend]);
+		// eslint-disable-next-line
+	}, []);
 
 	return (
 		<div>
