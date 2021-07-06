@@ -52,6 +52,19 @@ Demo Videos
 
 ![Screenshot (19)](https://user-images.githubusercontent.com/76695320/124617962-ff055e00-de94-11eb-9ef1-b14fe5989363.png)
 
+### PC PWA App
+
+![Screenshot (1066)](https://user-images.githubusercontent.com/76695320/124620323-fc0b6d00-de96-11eb-8953-25ff97b69cb3.png)
+
+![Screenshot (1067)](https://user-images.githubusercontent.com/76695320/124620351-0299e480-de97-11eb-819a-5184d4c80286.png)
+
+![Screenshot (1068)](https://user-images.githubusercontent.com/76695320/124620373-075e9880-de97-11eb-9654-829f26ab9cc9.png)
+
+![Screenshot (1069)](https://user-images.githubusercontent.com/76695320/124620398-0d547980-de97-11eb-8b28-548e3072078f.png)
+
+![Screenshot (1070)](https://user-images.githubusercontent.com/76695320/124620430-12192d80-de97-11eb-844d-ee763dcd52ab.png)
+
+
 ### Mobile PWA App
 
 ![mb-1](https://user-images.githubusercontent.com/76695320/124618454-6d4a2080-de95-11eb-8bd7-62d203df5df0.jpeg)
