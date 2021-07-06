@@ -111,3 +111,47 @@ To run this project, you will need to add the following environment variables to
 `API_KEY` : get your own api_key from [The Movie Database(tmdb)🎬](https://www.themoviedb.org/)
 
 `ANOTHER_API_KEY` : connect your [Firebase](https://firebase.google.com/) account & configure it in "firebase.js"
+
+
+## npm packages used
+
+### Material-Ui
+
+```bash
+  npm i @material-ui/core
+```
+```bash
+  npm i @material-ui/icons
+```
+```bash
+  npm i @material-ui/lab
+```
+### Axios
+
+```bash
+  npm i axios
+```
+### React-Bootstrap
+```bash
+  npm i bootstrap
+```
+```bash
+  npm i react-bootstrap
+```
+### Firebase & Firestore DB
+```bash
+  npm i firebase
+```
+### React-Alice-Carousel
+```bash
+  npm i react-alice-carousel
+```
+### React-Router
+```bash
+  npm i react-router-dom
+```
+### React-Speech-Recognition
+```bash
+  npm i react-speech-recognition
+```
+
