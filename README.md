@@ -88,3 +88,17 @@ Api used : [The Movie Database(tmdb)🎬](https://developers.themoviedb.org/3/ge
 | `api_key`      | `string` | **Required**. Your API key |
 | `page`      | `string` | **Required**. Number of Pages |
 | `query`      | `string` | **Required**. Your Search Text |
+
+#### Get movies/tv-series on Search Recommendation
+
+```http
+  GET /api/type{...media_type...}/{...id...}/recommendations/api_key=?{...}&page=1
+
+  https://api.themoviedb.org/3/${media_type}/${id}/recommendations?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `api_key`      | `string` | **Required**. Your API key |
+| `page`      | `string` | **Required**. Number of Pages |
+| `query`      | `string` | **Required**. Your Search Text |
