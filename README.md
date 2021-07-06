@@ -42,7 +42,7 @@ Api used : [The Movie Database(tmdb)🎬](https://developers.themoviedb.org/3/ge
 | `api_key` | `string` | **Required**. Your API key |
 | `pages` | `string` | **Required**. Number of Pages |
 
-#### Get all tv-series
+#### Get all tv-series(sort by genre)
 
 ```http
   GET /api/discover/tv?api_key=?{...}&page={...}&with_genres=${...}
@@ -54,6 +54,32 @@ Api used : [The Movie Database(tmdb)🎬](https://developers.themoviedb.org/3/ge
 | :-------- | :------- | :-------------------------------- |
 | `api_key`      | `string` | **Required**. Your API key |
 | `page`      | `string` | **Required**. Number of Pages |
-| `genres`      | `string` | **Required**. Sort by Genre |
+| `genres`      | `string` | **Required**. Genre of Tv-Series |
 
-  
+#### Get all movies(sort by genre)
+
+```http
+  GET /api/discover/movie?api_key=?{...}&page={...}&with_genres=${...}
+
+  https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreforURL}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `api_key`      | `string` | **Required**. Your API key |
+| `page`      | `string` | **Required**. Number of Pages |
+| `genres`      | `string` | **Required**. Genre of Movies |
+
+#### Get searched movies/tv-series
+
+```http
+  GET /api/search/type{...media_type...}api_key=?{...}&querarcy=${...searchText...}&page={...}
+
+  https://api.themoviedb.org/3/search/${type ? "tv" : "movie"}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&querarcy=${searchText}&page=${page}&include_adult=false
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `api_key`      | `string` | **Required**. Your API key |
+| `page`      | `string` | **Required**. Number of Pages |
+| `query`      | `string` | **Required**. Your Search Text |
