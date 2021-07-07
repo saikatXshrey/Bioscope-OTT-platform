@@ -22,7 +22,7 @@ BIOSCOPE has user-aunthentication and user-uid based db's records and and keepin
 
 [Documentation](https://drive.google.com/file/d/1byqDXGyIq6SETrZT3zcdA8BQWb9lOy_P/view?usp=sharing)
 
-[Presentation](https://drive.google.com/file/d/1SfSMJLRLNDMSGT93_BYLE4nfpcqrHQKq/view?usp=sharing)
+[Presentation](https://drive.google.com/file/d/1g8i100dWXyceA22jZ9erUIwkgEwWWyl0/view?usp=sharing)
 
 ## Demo
 
