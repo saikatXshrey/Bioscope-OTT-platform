@@ -18,6 +18,12 @@ BIOSCOPE has user-aunthentication and user-uid based db's records and and keepin
 ## Live Link🚀🚀
 [🍿BIOSCOPE](https://bioscope-app.netlify.app/)
 
+## Documentation
+
+[Documentation](https://drive.google.com/file/d/1byqDXGyIq6SETrZT3zcdA8BQWb9lOy_P/view?usp=sharing)
+
+[Presentation](https://drive.google.com/file/d/1SfSMJLRLNDMSGT93_BYLE4nfpcqrHQKq/view?usp=sharing)
+
 ## Demo
 
 Demo Videos
@@ -100,6 +106,7 @@ Demo Videos
 
 ![Screenshot (23)](https://user-images.githubusercontent.com/76695320/124618356-573c6000-de95-11eb-8383-2fe34a16dcf6.png)
 
+
   
 ## API Reference
 
@@ -173,6 +180,18 @@ Api used : [The Movie Database(tmdb)🎬](https://developers.themoviedb.org/3/ge
 | `api_key`      | `string` | **Required**. Your API key |
 | `id`      | `string` | **Required**. Current movie/tv-series id |
 | `media_type`      | `string` | **Required**. Movie/Tv-Series |
+
+### Get Movie/Tv-Series Trailers
+
+```http
+  GET /api/watch?v={...video name...}
+
+  https://www.youtube.com/watch?v=${video}
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `movie/tv-series name` | `string` | **Required**. Video name |
 
 
 ## Environment Variables
